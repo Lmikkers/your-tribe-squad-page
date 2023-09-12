@@ -14,18 +14,9 @@ body{
 }
 
 
-#container{
-    height: 95vh;
-    width: 50vw;
-    border: solid 1px black;
-    margin: 0 auto;
-    background: #936FBA;
-}
+
 
 header {
-    width: 100vw;
-    height: 100vh;
-    background: ghostwhite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +30,7 @@ header img {
 }
 
 h1{
-    text-align: center;
+    text-align: center;}
 
 article {
     display: flex;
@@ -90,4 +81,12 @@ footer {
     width: 100vw;
 
 
+}
+
+#container{
+    height: 95vh;
+    width: 50vw;
+    border: solid 1px black;
+    margin: 0 auto;
+    background: #936FBA;
 }
