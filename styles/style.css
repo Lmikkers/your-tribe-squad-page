@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 header {
     width: 100vw;
     height: 100vh;
@@ -10,4 +11,64 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+header img {
+    width: 40vw;
+    height: 60vh;
+    background-color: grey;
+}
+
+
+
+
+article {
+    display: flex;
+    flex-direction: row;
+    background: lightgray;
+    height: 50vh;
+}
+
+article section {
+    width: 100%;
+    padding: 2em;
+    position: relative;
+}
+
+article section.image {
+    width: 40%;
+    padding: 0;
+}
+
+article section.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+article section a.button {
+    background: black;
+    color: white;
+    position: absolute;
+    bottom: 2em;
+    padding: 1em 2em;
+    right: 2em;
+}
+
+
+/* EVEN ITEM DRAAIT FOTO EN CONTENT OM */
+
+article:nth-child(even) {
+    border: red 2px solid;
+}
+
+/* EIND EVEN ITEM DRAAIT FOTO EN CONTENT OM */
+
+
+
+
+footer {
+    width: 100vw;
+
 }
