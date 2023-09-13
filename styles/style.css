@@ -1,3 +1,9 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Slab', serif;
@@ -37,13 +43,6 @@ article section {
     width: 100%;
     padding: 2em;
     position: relative;
-    display: flex;
-}
-article section:nth-child(even) {
-    width: 100%;
-    padding: 2em;
-    position: relative;
-    flex-direction: row-reverse;
 }
 
 article section.image {
@@ -76,9 +75,9 @@ article section a.button:hover {
 
 /* EVEN ITEM DRAAIT FOTO EN CONTENT OM */
 
-/* article:nth-child(even) {
+article:nth-child(even) {
     border: red 2px solid;
-} */
+}
 
 /* EIND EVEN ITEM DRAAIT FOTO EN CONTENT OM */
 
@@ -93,15 +92,7 @@ footer {
 
 #container{
     height: 95vh;
-    width: 50vw;
-    border: solid 1px black;
-    margin: 0 auto;
+    width: 70vw;
+    margin: 10px auto;
     background: #936FBA;
-}
-h1{
-    text-align: center;
-}
-img{
-    width: 10vw;
-    height: 20vh;
 }
