@@ -2,15 +2,17 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Slab', serif;
     background: ghostwhite;
-    height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    position: relative;
+    display: flex;
 }
 
 
@@ -81,18 +83,23 @@ article:nth-child(even) {
 
 /* EIND EVEN ITEM DRAAIT FOTO EN CONTENT OM */
 
+#menu{
+    width: 20vw ;
+    
+    background: gray;
+    text-align: center;
+    position: fixed;
+    left: 0;
 
-
-
-footer {
-    width: 100vw;
-
-
+}
+#menu a{
+    display: block;
+    text-decoration: underline;
 }
 
 #container{
     height: 95vh;
     width: 70vw;
-    margin: 10px auto;
+    margin: 0 0 0 20vw;
     background: #936FBA;
 }
