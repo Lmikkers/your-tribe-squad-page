@@ -25,7 +25,7 @@ header {
 header img {
     width: 40vw;
     height: 60vh;
-    background-color: grey;
+    background-color: #936FBA;
 }
 
 h1{
@@ -62,6 +62,13 @@ article section a.button {
     bottom: 2em;
     padding: 1em 2em;
     right: 2em;
+    transition: 400ms;
+}
+article section a.button:hover {
+    background: white;
+    color: black;
+    position: absolute;
+    transition: 0.75s;
 }
 
 
@@ -84,8 +91,7 @@ footer {
 
 #container{
     height: 95vh;
-    width: 50vw;
-    border: solid 1px black;
-    margin: 0 auto;
+    width: 70vw;
+    margin: 10px auto;
     background: #936FBA;
 }
