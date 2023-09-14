@@ -30,10 +30,12 @@ header img {
 
 h1{
     text-align: center;
+    font-size: 3rem;
 }
 
 h2{
     text-align: center;
+    font-size: 1.5rem;
 }
 
 a.button {
@@ -103,27 +105,32 @@ article section a.button:hover {
 
 article:nth-child(odd) {
     border: red 2px solid;
+    rotate: 180deg;
 }
 
 /* EIND EVEN ITEM DRAAIT FOTO EN CONTENT OM */
 
 #menu{
     width: 20vw ;
-    
     background: gray;
-    text-align: center;
+    text-align: left;
     position: fixed;
+    top: 0;
     left: 0;
-
 }
+
+#menu h2{
+    text-align:center;
+}
+
 #menu a{
     display: block;
+    margin-left: 1em;
     text-decoration: underline;
-
 }
 
 #container{
-    height: 95vh;
+    /*height: 95vh;*/
     width: 70vw;
     margin: 0 0 0 20vw;
     background: #936FBA;
