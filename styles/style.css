@@ -97,26 +97,6 @@ article section a.button:hover {
     transition: 0.75s;
 }
 
-
-/* EVEN ITEM DRAAIT FOTO EN CONTENT OM */
-
-article:nth-child(odd) {
-    rotate: 180deg;
-}
-
-article:nth-child(odd) section {
-    rotate: 180deg;
-    background-color: rgb(174, 174, 174);
-    text-align: right;
-}
-
-article:nth-child(odd) section a.button {
-    left: 2em;
-    max-width: 2rem;
-}
-
-/* EIND EVEN ITEM DRAAIT FOTO EN CONTENT OM */
-
 #menu{
     width: 20vw ;
     z-index: 2;
@@ -153,3 +133,64 @@ article:nth-child(odd) section a.button {
     right: 0px;
   }
 
+/*Screen veranderen*/
+@media only screen and (max-width: 600px) {
+    header img {
+        height: 10vh;
+        object-fit: contain;
+        background-color: #936FBA;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        background: lightgray;
+        height: 35vh;
+    }
+
+    article section {
+        width: 100%;
+        padding: 2em;
+        position: relative;
+    }
+
+    article section.image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    article section a.button {
+        background: black;
+        color: white;
+        position: relative;
+        top: 2em;
+        padding: 1em 2em;
+        text-align: center;
+    }
+  
+}
+
+@media only screen and (min-width: 600px ) {
+  
+    /* EVEN ITEM DRAAIT FOTO EN CONTENT OM */
+    article:nth-child(odd) {
+        rotate: 180deg;
+    }
+
+    article:nth-child(odd) section {
+        rotate: 180deg;
+        background-color: rgb(174, 174, 174);
+        text-align: right;
+    }
+
+    article:nth-child(odd) section a.button {
+        left: 2em;
+        max-width: 2rem;
+    }
+    
+  }
+  /* EIND EVEN ITEM DRAAIT FOTO EN CONTENT OM */
+
+@media only screen and (min-width: 768px) {
+    article {background: blue;}
+  } 
