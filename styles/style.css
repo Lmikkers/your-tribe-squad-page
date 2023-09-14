@@ -107,10 +107,12 @@ article:nth-child(odd) {
 article:nth-child(odd) section {
     rotate: 180deg;
     background-color: rgb(174, 174, 174);
+    text-align: right;
 }
 
 article:nth-child(odd) section a.button {
     left: 2em;
+    max-width: 2rem;
 }
 
 /* EIND EVEN ITEM DRAAIT FOTO EN CONTENT OM */
@@ -151,7 +153,3 @@ article:nth-child(odd) section a.button {
     right: 0px;
   }
 
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #161327;
-    }}
