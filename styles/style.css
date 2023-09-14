@@ -5,6 +5,11 @@
     scroll-behavior: smooth;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+      background: #161327;
+    }}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Slab', serif;
