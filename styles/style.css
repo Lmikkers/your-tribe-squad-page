@@ -132,19 +132,12 @@ article:nth-child(odd) {
 }
 
 #container{
-    /*height: 95vh;*/
     width: 70vw;
     margin: 0 0 0 20vw;
     background: #936FBA;
     z-index: 3;
 }
-#container{
-    height: 95vh;
-    width: 70vw;
-    margin: 0 0 0 20vw;
-    background: #936FBA;
-    z-index: 3;
-}
+
 .dark-mode {
     background-color: #161327;
     transition: 0.5s;
