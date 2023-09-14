@@ -5,11 +5,6 @@
     scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-      background: #161327;
-    }}
-
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Slab', serif;
@@ -36,10 +31,12 @@ header img {
 
 h1{
     text-align: center;
+    font-size: 3rem;
 }
 
 h2{
     text-align: center;
+    font-size: 1.5rem;
 }
 
 a.button {
@@ -57,10 +54,6 @@ a.button:hover {
     color: black;
     position: fixed;
     transition: 0.75s;
-}
-#omhoog{
-    position: fixed;
-    bottom: 6em;
 }
 
 article {
@@ -108,7 +101,16 @@ article section a.button:hover {
 /* EVEN ITEM DRAAIT FOTO EN CONTENT OM */
 
 article:nth-child(odd) {
-    border: red 2px solid;
+    rotate: 180deg;
+}
+
+article:nth-child(odd) section {
+    rotate: 180deg;
+    background-color: rgb(174, 174, 174);
+}
+
+article:nth-child(odd) section a.button {
+    left: 2em;
 }
 
 /* EIND EVEN ITEM DRAAIT FOTO EN CONTENT OM */
@@ -117,31 +119,30 @@ article:nth-child(odd) {
     width: 20vw ;
     z-index: 2;
     background: gray;
-    text-align: center;
+    text-align: left;
     position: fixed;
+    top: 0;
     left: 0;
-
 }
+
+#menu h2{
+    text-align:center;
+}
+
 #menu a{
     display: block;
+    margin-left: 1em;
+    margin-top: 1em;
     text-decoration: underline;
-
 }
 
 #container{
-    height: 95vh;
     width: 70vw;
     margin: 0 0 0 20vw;
     background: #936FBA;
     z-index: 3;
 }
-#container{
-    height: 95vh;
-    width: 70vw;
-    margin: 0 0 0 20vw;
-    background: #936FBA;
-    z-index: 3;
-}
+
 .dark-mode {
     background-color: #161327;
     transition: 0.5s;
@@ -149,3 +150,8 @@ article:nth-child(odd) {
   #toggle{
     right: 0px;
   }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #161327;
+    }}
