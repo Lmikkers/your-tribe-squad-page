@@ -5,6 +5,11 @@
     scroll-behavior: smooth;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+      background: #161327;
+    }}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Slab', serif;
@@ -142,10 +147,6 @@ article:nth-child(odd) {
     background-color: #161327;
     transition: 0.5s;
   }
-  @media (prefers-color-scheme: dark) {
-    body {
-      background: #161327;
-    }}
   #toggle{
     right: 0px;
   }
