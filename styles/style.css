@@ -97,6 +97,11 @@ article section a.button:hover {
     transition: 0.75s;
 }
 
+/*nav------------------------------------*/
+nav ul{
+    list-style: none;
+}
+
 #menu{
     width: 20vw ;
     z-index: 2;
@@ -105,6 +110,7 @@ article section a.button:hover {
     position: fixed;
     top: 0;
     left: 0;
+    transition: 1s;
 }
 
 #menu h2{
@@ -115,9 +121,22 @@ article section a.button:hover {
     display: block;
     margin-left: 1em;
     margin-top: 1em;
-    text-decoration: underline;
+    color:beige;
+    text-decoration: none;
 }
 
+nav ul ul {
+	display: none;
+	position: absolute;
+    background: gray;
+    width:20vw;
+}
+
+nav ul:hover ul {
+	display: block;
+}
+
+/*nav--------------------------------------------------*/
 #container{
     width: 70vw;
     margin: 0 0 0 20vw;
