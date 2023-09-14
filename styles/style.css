@@ -5,11 +5,6 @@
     scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-      background: #161327;
-    }}
-
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Slab', serif;
@@ -60,10 +55,6 @@ a.button:hover {
     position: fixed;
     transition: 0.75s;
 }
-#omhoog{
-    position: fixed;
-    bottom: 6em;
-}
 
 article {
     display: flex;
@@ -110,8 +101,16 @@ article section a.button:hover {
 /* EVEN ITEM DRAAIT FOTO EN CONTENT OM */
 
 article:nth-child(odd) {
-    border: red 2px solid;
     rotate: 180deg;
+}
+
+article:nth-child(odd) section {
+    rotate: 180deg;
+    background-color: rgb(174, 174, 174);
+}
+
+article:nth-child(odd) section a.button {
+    left: 2em;
 }
 
 /* EIND EVEN ITEM DRAAIT FOTO EN CONTENT OM */
@@ -133,6 +132,7 @@ article:nth-child(odd) {
 #menu a{
     display: block;
     margin-left: 1em;
+    margin-top: 1em;
     text-decoration: underline;
 }
 
@@ -150,3 +150,8 @@ article:nth-child(odd) {
   #toggle{
     right: 0px;
   }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #161327;
+    }}
