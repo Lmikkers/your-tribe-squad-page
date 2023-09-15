@@ -195,6 +195,11 @@ nav ul:hover ul {
         position: relative;
         transition: 0.75s;
     }
+    @media (prefers-color-scheme: dark) {
+        body{
+            background-color: #161327;
+        }
+    }
   
 }
 
