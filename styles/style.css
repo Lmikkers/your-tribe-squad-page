@@ -176,12 +176,16 @@ nav ul:hover ul {
         object-fit: cover;
     }
 
+    article section.image a {
+        pointer-events: none;
+    }
+
     article section a.button {
         background: black;
         color: white;
         position: relative;
-        top: 2em;
-        padding: 1em 2em;
+        top: 1em;
+        padding: 0.5em 2em;
         text-align: center;
     }
 
@@ -227,8 +231,6 @@ nav ul:hover ul {
   /* EIND EVEN ITEM DRAAIT FOTO EN CONTENT OM */
 
 @media only screen and (min-width: 768px) {
-    article {background: blue;}
-
     article section.image {
         width: 40%;
         padding: 0;
